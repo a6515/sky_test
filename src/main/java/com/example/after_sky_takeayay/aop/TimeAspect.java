@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class TimeAspect {
     @Around("execution(* com.example.after_sky_takeayay.controller.*.*(..))") //切入点表达式
     public Object recordTime(ProceedingJoinPoint proceedingJoinPoint) throws Throwable{
-        System.out.println("AOP切入");
+        System.out.println("AOP-计算方法耗时");
         long begin = System.currentTimeMillis();
         Object result = proceedingJoinPoint.proceed();
         long end = System.currentTimeMillis();

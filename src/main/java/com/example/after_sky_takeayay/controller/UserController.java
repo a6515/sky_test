@@ -1,6 +1,8 @@
 package com.example.after_sky_takeayay.controller;
 
 import com.example.after_sky_takeayay.aop.XiaoGuo;
+import com.example.after_sky_takeayay.pojo.bean.Category;
+import com.example.after_sky_takeayay.pojo.bean.Dish;
 import com.example.after_sky_takeayay.pojo.dto.Result;
 import com.example.after_sky_takeayay.pojo.bean.User;
 import com.example.after_sky_takeayay.service.UserService;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
 
 @CrossOrigin
@@ -43,6 +46,14 @@ public class UserController {
         if(n>0) return Result.success("新员工注册成功");
         else return Result.error("失败了");
 
+    }
+    @RequestMapping("/getDish")
+    public Result<LinkedList<Dish> > getDish(){
+        return Result.success(userService.getDish());
+    }
+    @RequestMapping("/getCategory")
+    public Result<LinkedList<Category> > getCategory(){
+        return Result.success(userService.getCategory());
     }
 
 

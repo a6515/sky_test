@@ -1,12 +1,16 @@
 package com.example.after_sky_takeayay.mapper;
 
 
+import com.example.after_sky_takeayay.pojo.bean.Category;
+import com.example.after_sky_takeayay.pojo.bean.Dish;
 import com.example.after_sky_takeayay.pojo.bean.OperateLog;
 import com.example.after_sky_takeayay.pojo.bean.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+
+import java.util.LinkedList;
 
 @Mapper
 public interface UserMapper {
@@ -17,4 +21,9 @@ public interface UserMapper {
     public int register(@Param("id") int id,@Param("name") String name, @Param("password") String password);
     @Insert("insert into operatelog values (#{id},#{time},#{className},#{methodName},#{methodParams},#{returnValue},#{costTime})")
     public int logRecord(OperateLog op);
+
+    @Select("select * from category")
+    public LinkedList<Category> getCategory();
+    @Select("select * from dish")
+    public LinkedList<Dish> getDish();
 }

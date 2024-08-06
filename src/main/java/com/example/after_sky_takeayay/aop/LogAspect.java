@@ -29,7 +29,7 @@ public class LogAspect {
 
     @Around("@annotation(com.example.after_sky_takeayay.aop.XiaoGuo)")
     public Object recordLog( ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-        System.out.println("进入了无敌方法");
+        System.out.println("进入了AOP-日志及行为记录");
         Date time = new Date(System.currentTimeMillis());
         String className = proceedingJoinPoint.getClass().getName(); //得到类名
         String methodName = proceedingJoinPoint.getSignature().getName(); //得到方法名
@@ -44,7 +44,7 @@ public class LogAspect {
         int id;
         if(token==null){ id=(Integer)args[0];}
         else{
-            id = (int) JwtUtils.parseToken(token).get("id");
+            id = Integer.parseInt((String) JwtUtils.parseToken(token).get("id"));
         }
         System.out.println("根据token得到的id为:"+id);
         OperateLog operateLog = new OperateLog(id, time, className, methodName, methodParams, returnValue, costTime);

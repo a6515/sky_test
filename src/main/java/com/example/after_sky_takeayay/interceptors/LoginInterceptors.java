@@ -21,7 +21,6 @@ public class LoginInterceptors implements HandlerInterceptor {
         }
 
         String token = request.getHeader("Authorization");
-        System.out.println("从前端获取到的 token 的值为: " + token);
 
         try {
             // 解析 JWT token，获取其中的声明（claims）

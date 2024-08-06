@@ -4,34 +4,93 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c23108da-433d-4b3a-819a-570fc7b621ab" name="Changes" comment="" />
+    <list default="true" id="c23108da-433d-4b3a-819a-570fc7b621ab" name="Changes" comment="跟新">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/pojo/bean/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/aop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/aop/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/aop/TimeAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/aop/TimeAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/interceptors/LoginInterceptors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/interceptors/LoginInterceptors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/pojo/bean/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/pojo/bean/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/aop/LogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/aop/LogAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/aop/TimeAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/aop/TimeAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/interceptors/LoginInterceptors.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/interceptors/LoginInterceptors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/impl/UserServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2jtZj9j2x5UrxJV591FOqMidlTB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java项目/after_sky_takeayay&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;47ff4fa12456e4ecf61ec59180613520&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="AfterSkyTakeayayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="after_sky_takeayay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.after_sky_takeayay.AfterSkyTakeayayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.after_sky_takeayay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AfterSkyTakeayayApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,11 +99,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722208471018</updated>
-      <workItem from="1722208474949" duration="103000" />
+      <workItem from="1722208474949" duration="303000" />
+      <workItem from="1722840792969" duration="1718000" />
+      <workItem from="1722856815070" duration="3816000" />
     </task>
+    <task id="LOCAL-00001" summary="跟新">
+      <option name="closed" value="true" />
+      <created>1722208593074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722208593074</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="跟新" />
+    <option name="LAST_COMMIT_MESSAGE" value="跟新" />
   </component>
 </project>

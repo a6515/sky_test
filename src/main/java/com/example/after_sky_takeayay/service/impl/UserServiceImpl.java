@@ -1,6 +1,8 @@
 package com.example.after_sky_takeayay.service.impl;
 
 import com.example.after_sky_takeayay.aop.XiaoGuo;
+import com.example.after_sky_takeayay.pojo.bean.Category;
+import com.example.after_sky_takeayay.pojo.bean.Dish;
 import com.example.after_sky_takeayay.pojo.bean.User;
 import com.example.after_sky_takeayay.mapper.UserMapper;
 import com.example.after_sky_takeayay.service.UserService;
@@ -9,6 +11,8 @@ import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
+
+import java.util.LinkedList;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -29,5 +33,13 @@ public class UserServiceImpl implements UserService {
         return userMapper.ulogin(id,password);
     }
 
+    @Override
+    public LinkedList<Category> getCategory() {
+        return userMapper.getCategory();
+    }
 
+    @Override
+    public LinkedList<Dish> getDish() {
+        return userMapper.getDish();
+    }
 }
