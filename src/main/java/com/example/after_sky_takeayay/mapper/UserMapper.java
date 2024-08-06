@@ -1,14 +1,8 @@
 package com.example.after_sky_takeayay.mapper;
 
 
-import com.example.after_sky_takeayay.pojo.bean.Category;
-import com.example.after_sky_takeayay.pojo.bean.Dish;
-import com.example.after_sky_takeayay.pojo.bean.OperateLog;
-import com.example.after_sky_takeayay.pojo.bean.User;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import com.example.after_sky_takeayay.pojo.bean.*;
+import org.apache.ibatis.annotations.*;
 
 import java.util.LinkedList;
 
@@ -26,4 +20,28 @@ public interface UserMapper {
     public LinkedList<Category> getCategory();
     @Select("select * from dish")
     public LinkedList<Dish> getDish();
+    @Insert("insert into cart values (#{id},#{dish_id},#{dish_name},#{number},#{unit_price}) ")
+    public int addCart(@Param("id") int id,@Param("dish_id") int dish_id,@Param("dish_name") String dish_name,@Param("number") int number,@Param("unit_price") float unit_price);
+
+    @Select("select * from cart where id=#{id} and dish_id=#{dish_id}")
+    public Cart findById_Cart(@Param("id") int id,@Param("dish_id") int dish_id);
+    @Update("update cart set number=number+1  where id=#{id} and dish_id=#{dish_id}")
+    public int addCart_exact(@Param("id") int id,@Param("dish_id") int dish_id);
+
+    @Select("select * from cart where id=#{id}")
+    public LinkedList<Cart> getCart(@Param("id") int id);
+    @Update("update cart set number=number-1 where id=#{id} and dish_id=#{dish_id}")
+    public int sub_item(@Param("id") int id,@Param("dish_id") int dish_id);
+    @Update("update cart set number=number+1 where id=#{id} and dish_id=#{dish_id}")
+    public int add_item(@Param("id") int id,@Param("dish_id") int dish_id);
+    @Update("delete from cart where id=#{id} and dish_id=#{dish_id}")
+    public int remove_item(@Param("id") int id,@Param("dish_id") int dish_id);
+    @Insert("insert into orders values (#{order_id},#{id},NOW(),#{sum_price})")
+    @Options(useGeneratedKeys = true, keyProperty = "order_id", keyColumn = "order_id")
+    public int pay(Orders orders);
+
+    @Insert("insert into order_detials values (#{orderDetial_id},#{order_id},#{dish_id},#{dish_name},#{number},#{price},CURDATE())")
+    public int order_detial(OrderDetials orderDetials);
+    @Delete("delete from cart where id=#{id}")
+    public int cart_remove(@Param("id") int id);
 }
