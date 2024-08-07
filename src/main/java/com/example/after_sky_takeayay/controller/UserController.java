@@ -81,7 +81,7 @@ public class UserController {
         for (Cart item : cart) {
             System.out.println(item);
         }
-        int n=userService.pay(cart);
+        int n=userService.pay_test(cart);
         if(n>0) {return Result.success("支付成功");}
         else return Result.error("支付失败");
 

@@ -5,6 +5,7 @@ import com.example.after_sky_takeayay.pojo.bean.*;
 import org.apache.ibatis.annotations.*;
 
 import java.util.LinkedList;
+import java.util.List;
 
 @Mapper
 public interface UserMapper {
@@ -44,4 +45,14 @@ public interface UserMapper {
     public int order_detial(OrderDetials orderDetials);
     @Delete("delete from cart where id=#{id}")
     public int cart_remove(@Param("id") int id);
+
+    @Insert({
+            "<script>",
+            "INSERT INTO order_detials VALUES ",
+            "<foreach collection='orderDetailsList' item='item' separator=','>",
+            "(#{item.orderDetial_id}, #{item.order_id}, #{item.dish_id}, #{item.dish_name}, #{item.number}, #{item.price}, CURDATE())",
+            "</foreach>",
+            "</script>"
+    })
+    public int forEachInsertOrderDetails(@Param("orderDetailsList") List<OrderDetials> orderDetailsList);
 }

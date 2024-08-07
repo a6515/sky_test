@@ -5,14 +5,14 @@ import com.example.after_sky_takeayay.pojo.bean.*;
 import com.example.after_sky_takeayay.mapper.UserMapper;
 import com.example.after_sky_takeayay.service.UserService;
 import com.example.after_sky_takeayay.utils.JwtUtils;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -129,5 +129,43 @@ public class UserServiceImpl implements UserService {
             return n;
         } else return 0;
 
+    }
+
+    @Override
+    public int forEachInsertOrderDetails(List<OrderDetials> orderDetailsList) {
+        return userMapper.forEachInsertOrderDetails(orderDetailsList);
+    }
+
+    @Override
+    public int pay_test(LinkedList<Cart> cart) {
+        Map<String, Object> claims = JwtUtils.parseToken(request.getHeader("Authorization"));
+        int id = Integer.parseInt((String) claims.get("id"));
+        float sum_price = 0;
+        List<OrderDetials> orderDetailsList = new ArrayList<>();
+
+        for (Cart item : cart) {
+            sum_price += item.getUnit_price() * item.getNumber();
+            OrderDetials orderDetails = new OrderDetials(0, 0, item.getDish_id(), item.getDish_name(), item.getNumber(), item.getUnit_price(), null);
+            orderDetailsList.add(orderDetails);
+        }
+
+        Orders orders = new Orders();
+        orders.setId(id);
+        orders.setSum_price(sum_price);
+        int n = userMapper.pay(orders);
+        System.out.println("得到的自增长ID为:" + orders.getOrder_id());
+
+        if (n > 0) {
+            // 批量设置订单ID
+            for (OrderDetials orderDetail : orderDetailsList) {
+                orderDetail.setOrder_id(orders.getOrder_id());
+            }
+            // 批量插入订单详情
+            userMapper.forEachInsertOrderDetails(orderDetailsList);
+            cart_remove(id);
+            return n;
+        } else {
+            return 0;
+        }
     }
 }

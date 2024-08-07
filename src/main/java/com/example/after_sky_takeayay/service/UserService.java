@@ -1,11 +1,9 @@
 package com.example.after_sky_takeayay.service;
 
 import com.example.after_sky_takeayay.pojo.bean.*;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public interface UserService {
     public User ulogin(int id,  String password);
@@ -26,4 +24,6 @@ public interface UserService {
     public int pay(LinkedList<Cart> cart);
     public int order_detial(OrderDetials orderDetials);
     public int cart_remove(int id);
+    public int pay_test(LinkedList<Cart> cart);
+    public int forEachInsertOrderDetails(List<OrderDetials> orderDetailsList);
 }
