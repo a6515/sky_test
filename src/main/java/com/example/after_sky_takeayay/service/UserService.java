@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface UserService {
     public User ulogin(int id,  String password);
-    public int register(String name, String password);
+    public int register(User user);
     public LinkedList<Category> getCategory();
 
     public LinkedList<Dish> getDish();

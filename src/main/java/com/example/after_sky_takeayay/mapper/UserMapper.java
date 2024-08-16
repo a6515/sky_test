@@ -13,7 +13,8 @@ public interface UserMapper {
     public User ulogin(@Param("id") int id, @Param("password") String password);
 
     @Insert("insert into user values (#{id},#{name},#{password},0)")
-    public int register(@Param("id") int id,@Param("name") String name, @Param("password") String password);
+    @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
+    public int register(User user);
     @Insert("insert into operatelog values (#{id},#{time},#{className},#{methodName},#{methodParams},#{returnValue},#{costTime})")
     public int logRecord(OperateLog op);
 

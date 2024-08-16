@@ -24,13 +24,13 @@ public class UserServiceImpl implements UserService {
 
     @XiaoGuo
     @Override
-    public int register(String name, String password) {
-        password = DigestUtils.md5DigestAsHex(password.getBytes());
-        System.out.println("此时的信息为:" + name + "   " + password);
-        return userMapper.register(0, name, password);
+    public int register(User user) {
+        user.setPassword(DigestUtils.md5DigestAsHex(user.getPassword().getBytes()));
+        int n= userMapper.register(user);
+        System.out.println("注册生成的自增长ID为:"+user.getId());
+        return n;
     }
 
-    @XiaoGuo
     @Override
     public User ulogin(int id, String password) {
         password = DigestUtils.md5DigestAsHex(password.getBytes());

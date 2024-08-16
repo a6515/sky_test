@@ -5,15 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c23108da-433d-4b3a-819a-570fc7b621ab" name="Changes" comment="8-7号更新">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/aop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/aop/LogAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/exception/ExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/exception/ExceptionHandle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/pojo/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/pojo/bean/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/after_sky_takeayay/utils/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/after_sky_takeayay/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/after_sky_takeayay/RedisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/AfterSkyTakeayayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/aop/LogAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/aop/TimeAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/aop/XiaoGuo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/exception/ExceptionHandle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/interceptors/LoginInterceptors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/mapper/AdminMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/pojo/bean/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/pojo/bean/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/pojo/bean/Dish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/pojo/bean/OperateLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/pojo/bean/OrderDetials.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/pojo/bean/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/pojo/bean/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/pojo/dto/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/impl/AdminImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/after_sky_takeayay/utils/JwtUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/after_sky_takeayay/AfterSkyTakeayayApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/after_sky_takeayay/RedisTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +93,31 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;47ff4fa12456e4ecf61ec59180613520&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AfterSkyTakeayayApplication">
+    <configuration name="RedisTest.redisTestTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="after_sky_takeayay" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.after_sky_takeayay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.after_sky_takeayay" />
+      <option name="MAIN_CLASS_NAME" value="com.example.after_sky_takeayay.RedisTest" />
+      <option name="METHOD_NAME" value="redisTestTemplate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AfterSkyTakeayayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="after_sky_takeayay" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.after_sky_takeayay.AfterSkyTakeayayApplication" />
@@ -82,6 +134,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AfterSkyTakeayayApplication" />
+        <item itemvalue="JUnit.RedisTest.redisTestTemplate" />
       </list>
     </recent_temporary>
   </component>
@@ -99,6 +152,14 @@
       <workItem from="1722910010654" duration="6506000" />
       <workItem from="1722929604053" duration="12621000" />
       <workItem from="1722979209015" duration="5189000" />
+      <workItem from="1723023953568" duration="631000" />
+      <workItem from="1723180308878" duration="3749000" />
+      <workItem from="1723523092941" duration="47000" />
+      <workItem from="1723523603888" duration="242000" />
+      <workItem from="1723523914262" duration="3293000" />
+      <workItem from="1723537658221" duration="2381000" />
+      <workItem from="1723597913425" duration="3361000" />
+      <workItem from="1723628007989" duration="8925000" />
     </task>
     <task id="LOCAL-00001" summary="跟新">
       <option name="closed" value="true" />
@@ -140,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722981619381</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="8-7号更新">
+      <option name="closed" value="true" />
+      <created>1723023969936</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723023969936</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

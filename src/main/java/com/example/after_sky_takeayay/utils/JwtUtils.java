@@ -13,7 +13,7 @@ public class JwtUtils {
         //生成token
         return JWT.create()
                 .withClaim("user",claims) //添加载荷
-                .withExpiresAt(new Date(System.currentTimeMillis()+1000*60*60*2)) //添加过期时间
+                .withExpiresAt(new Date(System.currentTimeMillis()+1000*10)) //添加过期时间
                 .sign(Algorithm.HMAC256(KEY)); //指定算法，配置密钥
     }
     public static Map<String,Object> parseToken(String token){

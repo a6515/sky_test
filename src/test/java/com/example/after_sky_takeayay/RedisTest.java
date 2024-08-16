@@ -11,6 +11,7 @@ public class RedisTest {
     private RedisTemplate redisTemplate;
     @Test
     public void redisTestTemplate(){
-       redisTemplate.opsForHash().put("student","status","0");
+        String test = (String) redisTemplate.opsForHash().get("student","name");
+        System.out.println(test);
     }
 }

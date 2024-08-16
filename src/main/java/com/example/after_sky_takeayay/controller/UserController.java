@@ -20,7 +20,6 @@ public class UserController {
 
     @Autowired
     UserService userService;
-
     @RequestMapping("/ulogin")
     public Result ulogin(@RequestParam String id, @RequestParam String password) {
         System.out.println("id和密码为:" + id + "  " + password);
@@ -38,8 +37,9 @@ public class UserController {
 
     @RequestMapping("/register")
     public Result register(@RequestParam String name,@RequestParam String password){
-        int n = userService.register(name,password);
-        if(n>0) return Result.success("新员工注册成功");
+        User user = new User(name,password);
+        int n = userService.register(user);
+        if(n>0) return Result.success(user.getId());
         else return Result.error("失败了");
 
     }
